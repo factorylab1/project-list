@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <style>
     body {
       font-family: sans-serif;
@@ -10,62 +10,59 @@
       margin: 0;
       padding: 20px;
     }
+
     .project-list {
       display: grid;
-      grid-template-columns: 1fr auto;
+      grid-template-columns: 240px auto;
       gap: 7px 20px;
     }
-    .year-label {
-      display: flex;
-    }
-    .year-label .year {
-      margin-right: 8px;
+
+    .year-first {
       font-weight: bold;
-      white-space: nowrap;
     }
-    .project-name {
+
+    .project-name.indent {
+      padding-left: 48px; /* '2024 ' 길이에 맞춘 들여쓰기 */
+    }
+
+    .category {
       white-space: nowrap;
     }
   </style>
 </head>
 <body>
+
   <div class="project-list">
-    <div class="year-label">
-      <div class="year">2024</div>
-      <div class="project-name">테디스로드</div>
-    </div>
-    <div>Cafe</div>
+    <!-- 첫 항목 -->
+    <div class="project-name year-first">2024 테디스로드</div><div class="category">Cafe</div>
+    <!-- 이후 항목은 들여쓰기만 적용 -->
+    <div class="project-name indent">스파고결</div><div class="category">Aesthetic</div>
+    <div class="project-name indent">베리오아시</div><div class="category">Cafe</div>
+    <div class="project-name indent">DMU 도서관</div><div class="category">Library</div>
+    <div class="project-name indent">DMU 옥상 연결공간</div><div class="category">Public</div>
+    <div class="project-name indent">둘째 파 니엔테</div><div class="category">Aesthetic</div>
+    <div class="project-name indent">슬로 침보하우스</div><div class="category">Cafe</div>
+    <div class="project-name indent">슬로 배곧</div><div class="category">Cafe / Restaurant</div>
+    <div class="project-name indent">슬로 은계</div><div class="category">Cafe / Restaurant</div>
+    <div class="project-name indent">메종 드 테라스</div><div class="category">Cafe</div>
+    <div class="project-name indent">이호동 주택</div><div class="category">House</div>
+    <div class="project-name indent">슬로 원벨리</div><div class="category">Cafe</div>
+    <div class="project-name indent">서울대 치의학과 도서관</div><div class="category">Library</div>
+    <div class="project-name indent">서울대 첨단융합학부 라운지</div><div class="category">Public</div>
+    <div class="project-name indent">슬로 장현</div><div class="category">Cafe / Restaurant</div>
 
-    <div class="project-name">스파고결</div><div>Aesthetic</div>
-    <div class="project-name">베리오아시</div><div>Cafe</div>
-    <div class="project-name">DMU 도서관</div><div>Library</div>
-    <div class="project-name">DMU 옥상 연결공간</div><div>Public</div>
-    <div class="project-name">둘째 파 니엔테</div><div>Aesthetic</div>
-    <div class="project-name">슬로 침보하우스</div><div>Cafe</div>
-    <div class="project-name">슬로 배곧</div><div>Cafe / Restaurant</div>
-    <div class="project-name">슬로 은계</div><div>Cafe / Restaurant</div>
-    <div class="project-name">메종 드 테라스</div><div>Cafe</div>
-    <div class="project-name">이호동 주택</div><div>House</div>
-    <div class="project-name">슬로 원벨리</div><div>Cafe</div>
-    <div class="project-name">서울대 치의학과 도서관</div><div>Library</div>
-    <div class="project-name">서울대 첨단융합학부 라운지</div><div>Public</div>
-    <div class="project-name">슬로 장현</div><div>Cafe / Restaurant</div>
-
-    <div class="year-label">
-      <div class="year">2023</div>
-      <div class="project-name">성타르 성수</div>
-    </div>
-    <div>Cafe</div>
-
-    <div class="project-name">하이필즈긴</div><div>Aesthetic</div>
-    <div class="project-name">슬로 진위</div><div>Cafe / Retail / Restaurant</div>
-    <div class="project-name">슬로 용인</div><div>Cafe / Retail / Restaurant</div>
-    <div class="project-name">슬로 김포</div><div>Cafe / Restaurant</div>
-    <div class="project-name">슬로 남영</div><div>Cafe</div>
-    <div class="project-name">정부독도서관</div><div>Library</div>
-    <div class="project-name">인덕대 도서관</div><div>Library</div>
-    <div class="project-name">RS Automation</div><div>Office</div>
-    <div class="project-name">DMU 웰컴센터</div><div>Public</div>
+    <!-- 다음 연도 -->
+    <div class="project-name year-first">2023 성타르 성수</div><div class="category">Cafe</div>
+    <div class="project-name indent">하이필즈긴</div><div class="category">Aesthetic</div>
+    <div class="project-name indent">슬로 진위</div><div class="category">Cafe / Retail / Restaurant</div>
+    <div class="project-name indent">슬로 용인</div><div class="category">Cafe / Retail / Restaurant</div>
+    <div class="project-name indent">슬로 김포</div><div class="category">Cafe / Restaurant</div>
+    <div class="project-name indent">슬로 남영</div><div class="category">Cafe</div>
+    <div class="project-name indent">정부독도서관</div><div class="category">Library</div>
+    <div class="project-name indent">인덕대 도서관</div><div class="category">Library</div>
+    <div class="project-name indent">RS Automation</div><div class="category">Office</div>
+    <div class="project-name indent">DMU 웰컴센터</div><div class="category">Public</div>
   </div>
+
 </body>
 </html>
