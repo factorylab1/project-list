@@ -1,4 +1,10 @@
 <style>
+  
+  html, body {
+  overflow: hidden !important;   /* 외부(전체) 스크롤 완전 비활성화 */
+  height: 100vh;
+}
+  
 .thumbnail-list {
   display: grid;                           /* 자식들을 grid 레이아웃(격자)으로 배치 */
   grid-template-columns: repeat(3, 1fr);   /* 3열로 나누고 각 열 너비를 동일하게(1fr씩) */
