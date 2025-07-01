@@ -135,6 +135,15 @@
   <div></div><div class="project"><a href="https://www.f-actorylab.com/1802" target="_top">DMU 피팅센터</a></div><div class="category">Public</div>
   <div></div><div class="project"><a href="https://www.f-actorylab.com/1801" target="_top">The Value Lounge</a></div><div class="category">Cafe</div>
 </div>
+  
+    <script>
+    document.querySelectorAll('a').forEach(function(a){
+      a.onclick = function(e){
+        parent.rightFrame.location = this.href;
+        return false;
+      }
+    });
+  </script>
 
 </body>
 </html>
