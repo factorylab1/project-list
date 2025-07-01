@@ -19,6 +19,15 @@
       color: #111; /* 폰트 컬러 */
       font-weight: 200; /* 폰트 두께 100~900 */
       row-gap: 11px; /* 행간 */
+      scrollbar-width: none !important;        /* 파이어폭스 등에서 스크롤바 숨기기 */
+      -ms-overflow-style: none !important;     /* IE 10+, 엣지 등에서 스크롤바 숨기기 */
+    }
+    .thumbnail-list::-webkit-scrollbar {
+      width: 0px !important;                   /* 크롬/사파리에서 스크롤바 두께를 0으로(숨김) */
+      height: 0px !important;                  /* 가로 스크롤바도 0으로 */
+      background: transparent !important;      /* 스크롤바 배경 투명하게 */
+      display: none !important;                /* 아예 표시하지 않음 (크롬/사파리) */
+}
     }
     .project, .category, .year {
       font-size: 13px; /* 폰트 사이즈 */
