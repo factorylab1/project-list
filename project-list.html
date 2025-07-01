@@ -139,7 +139,7 @@
     <script>
     document.querySelectorAll('a').forEach(function(a){
       a.onclick = function(e){
-        parent.rightFrame.location = this.href;
+        parent.parent.rightFrame.location = this.href;
         return false;
       }
     });
