@@ -81,54 +81,89 @@
 <body>
   <div class="left-panel">
     <div class="project-list">
-      <!-- 기존 리스트 생략 (유지됨) -->
+      <hr class="year-divider">
+      <div class="year">2024</div>
+      <div class="project project-item" data-id="p2415">테디스로드</div><div class="category">Cafe</div>
+      <div></div><div class="project project-item" data-id="p2414">스파고결</div><div class="category">Aesthetic</div>
+      <div></div><div class="project project-item" data-id="p2413">베리오아시</div><div class="category">Cafe</div>
+      <div></div><div class="project project-item" data-id="p2412">DMU 도서관</div><div class="category">Library</div>
+      <div></div><div class="project project-item" data-id="p2411">DMU 옥상 연결공간</div><div class="category">Public</div>
+      <div></div><div class="project project-item" data-id="p2410">돌체 파 니엔테</div><div class="category">Aesthetic</div>
+      <hr class="year-divider">
+      <div class="year">2023</div>
+      <div class="project project-item" data-id="p2310">신용산 공유오피스</div><div class="category">Office</div>
+      <div></div><div class="project project-item" data-id="p2309">마켓포엠</div><div class="category">Shop</div>
+      <hr class="year-divider">
+      <div class="year">2022</div>
+      <div class="project project-item" data-id="p2208">조선호텔 마스터플랜</div><div class="category">Hotel</div>
+      <div></div><div class="project project-item" data-id="p2207">공덕동 공유주택</div><div class="category">Housing</div>
+      <hr class="year-divider">
+      <div class="year">2021</div>
+      <div class="project project-item" data-id="p2106">일산 디자인연구소</div><div class="category">Studio</div>
+      <div></div><div class="project project-item" data-id="p2105">논현동 갤러리하우스</div><div class="category">Gallery</div>
+      <hr class="year-divider">
+      <div class="year">2020</div>
+      <div class="project project-item" data-id="p2004">서울숲 전시공간</div><div class="category">Exhibition</div>
+      <div></div><div class="project project-item" data-id="p2003">해방촌 다가구 리노베이션</div><div class="category">Housing</div>
+      <hr class="year-divider">
+      <div class="year">2019</div>
+      <div class="project project-item" data-id="p1902">문래동 팩토리랩</div><div class="category">Office</div>
+      <hr class="year-divider">
+      <div class="year">2018</div>
+      <div class="project project-item" data-id="p1801">부천 주택개조</div><div class="category">Residential</div>
     </div>
   </div>
+
   <div class="right-panel">
     <div id="gallery" class="thumbnail-list">
-      <!-- 실제 6개 썸네일 -->
-      <img src="https://res.cloudinary.com/dgdj01iwb/image/upload/w_800,q_75/2415_thumbnail_hxgdy8.jpg" alt="테디스로드">
-      <img src="https://res.cloudinary.com/dgdj01iwb/image/upload/w_800,q_75/2414_thumbnail_dambd6.jpg" alt="스파고결">
-      <img src="https://res.cloudinary.com/dgdj01iwb/image/upload/w_800,q_75/2413_thumbnail_crwoch.jpg" alt="베리오아시">
-      <img src="https://res.cloudinary.com/dgdj01iwb/image/upload/w_800,q_75/2412_thumbnail_rrrwee.jpg" alt="DMU 도서관">
-      <img src="https://res.cloudinary.com/dgdj01iwb/image/upload/w_800,q_75/2411_thumbnail_d9od8w.jpg" alt="DMU 옥상 연결공간">
-      <img src="https://res.cloudinary.com/dgdj01iwb/image/upload/w_800,q_75/2410_thumbnail_zi5f4l.jpg" alt="돌체 파 니엔테">
-      <!-- 나머지는 임의 이미지 -->
-      <img src="https://picsum.photos/400/600?random=1" alt="project">
-      <img src="https://picsum.photos/400/600?random=2" alt="project">
-      <img src="https://picsum.photos/400/600?random=3" alt="project">
-      <img src="https://picsum.photos/400/600?random=4" alt="project">
-      <img src="https://picsum.photos/400/600?random=5" alt="project">
-      <img src="https://picsum.photos/400/600?random=6" alt="project">
-      <img src="https://picsum.photos/400/600?random=7" alt="project">
-      <img src="https://picsum.photos/400/600?random=8" alt="project">
-      <img src="https://picsum.photos/400/600?random=9" alt="project">
-      <img src="https://picsum.photos/400/600?random=10" alt="project">
-      <img src="https://picsum.photos/400/600?random=11" alt="project">
-      <img src="https://picsum.photos/400/600?random=12" alt="project">
+      <img src="https://res.cloudinary.com/dgdj01iwb/image/upload/w_800,q_75/2415_thumbnail_hxgdy8.jpg" alt="테디스로드" data-id="p2415">
+      <img src="https://res.cloudinary.com/dgdj01iwb/image/upload/w_800,q_75/2414_thumbnail_dambd6.jpg" alt="스파고결" data-id="p2414">
+      <img src="https://res.cloudinary.com/dgdj01iwb/image/upload/w_800,q_75/2413_thumbnail_crwoch.jpg" alt="베리오아시" data-id="p2413">
+      <img src="https://res.cloudinary.com/dgdj01iwb/image/upload/w_800,q_75/2412_thumbnail_rrrwee.jpg" alt="DMU 도서관" data-id="p2412">
+      <img src="https://res.cloudinary.com/dgdj01iwb/image/upload/w_800,q_75/2411_thumbnail_d9od8w.jpg" alt="DMU 옥상 연결공간" data-id="p2411">
+      <img src="https://res.cloudinary.com/dgdj01iwb/image/upload/w_800,q_75/2410_thumbnail_zi5f4l.jpg" alt="돌체 파 니엔테" data-id="p2410">
+      <!-- 추가 임시 썸네일 -->
+      <img src="https://picsum.photos/400/600?random=1" alt="project" data-id="p2310">
+      <img src="https://picsum.photos/400/600?random=2" alt="project" data-id="p2309">
+      <img src="https://picsum.photos/400/600?random=3" alt="project" data-id="p2208">
+      <img src="https://picsum.photos/400/600?random=4" alt="project" data-id="p2207">
+      <img src="https://picsum.photos/400/600?random=5" alt="project" data-id="p2106">
+      <img src="https://picsum.photos/400/600?random=6" alt="project" data-id="p2105">
+      <img src="https://picsum.photos/400/600?random=7" alt="project" data-id="p2004">
+      <img src="https://picsum.photos/400/600?random=8" alt="project" data-id="p2003">
+      <img src="https://picsum.photos/400/600?random=9" alt="project" data-id="p1902">
+      <img src="https://picsum.photos/400/600?random=10" alt="project" data-id="p1801">
     </div>
   </div>
+
   <script>
     const projectItems = document.querySelectorAll('.project-item');
     const allContents = document.querySelectorAll('.project-content');
     const gallery = document.getElementById('gallery');
 
+    // 좌측 리스트 클릭 시 상세 표시
     projectItems.forEach(item => {
-      item.addEventListener('click', () => {
-        const id = item.dataset.id;
-        allContents.forEach(c => c.style.display = 'none');
-        gallery.style.display = 'none';
-        let detail = document.getElementById(id);
-        if (!detail) {
-          detail = document.createElement('div');
-          detail.id = id;
-          detail.className = 'project-content';
-          detail.innerHTML = '<div class="back-button" onclick="showGallery()">← 갤러리로 돌아가기</div><p>' + id + ' 상세내용</p>';
-          document.querySelector('.right-panel').appendChild(detail);
-        }
-        detail.style.display = 'block';
-      });
+      item.addEventListener('click', () => openDetail(item.dataset.id));
     });
+
+    // 우측 썸네일 클릭 시 상세 표시
+    document.querySelectorAll('.thumbnail-list img').forEach(img => {
+      img.addEventListener('click', () => openDetail(img.dataset.id));
+    });
+
+    function openDetail(id) {
+      allContents.forEach(c => c.style.display = 'none');
+      gallery.style.display = 'none';
+      let detail = document.getElementById(id);
+      if (!detail) {
+        detail = document.createElement('div');
+        detail.id = id;
+        detail.className = 'project-content';
+        detail.innerHTML = '<div class="back-button" onclick="showGallery()">← 갤러리로 돌아가기</div><h2>' + id + '</h2><p>상세내용</p>';
+        document.querySelector('.right-panel').appendChild(detail);
+      }
+      detail.style.display = 'block';
+    }
 
     function showGallery() {
       allContents.forEach(c => c.style.display = 'none');
