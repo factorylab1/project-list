@@ -131,15 +131,18 @@
     <div></div><div class="project"><a href="https://www.f-actorylab.com/1801">The Value Lounge</a></div><div class="category">Cafe</div>
   </div>
 
-  <script>
-    document.querySelectorAll('a').forEach(function (a) {
-      a.onclick = function (e) {
+<script>
+  window.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll('.project-list a').forEach(function (a) {
+      a.addEventListener("click", function (e) {
         e.preventDefault();
         parent.rightFrame.location.href = this.href;
-      };
+      });
     });
-  </script>
+  });
+</script>
 </body>
 </html>
+
 
 
