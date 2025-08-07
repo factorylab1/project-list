@@ -14,7 +14,6 @@
       overflow: hidden;
     }
 
-    /* 좌측 */
     .left-panel {
       width: 50vw;
       overflow-y: auto;
@@ -49,7 +48,6 @@
       color: #777;
     }
 
-    /* 우측 */
     .right-panel {
       width: 50vw;
       height: 100vh;
@@ -68,11 +66,9 @@
       object-fit: cover;
       display: block;
     }
-
     .project-content {
       display: none;
     }
-
     .back-button {
       font-size: 12px;
       margin-bottom: 10px;
@@ -82,41 +78,63 @@
   </style>
 </head>
 <body>
-  <!-- 좌측: 프로젝트 리스트 -->
   <div class="left-panel">
     <div class="project-list">
       <hr class="year-divider">
       <div class="year">2024</div>
       <div class="project project-item" data-id="proj-2415">테디스로드</div><div class="category">Cafe</div>
       <div></div><div class="project project-item" data-id="proj-2414">스파고결</div><div class="category">Aesthetic</div>
-      <!-- 필요한 만큼 추가 -->
+      <div></div><div class="project project-item" data-id="proj-2413">베리오아시</div><div class="category">Cafe</div>
+      <div></div><div class="project project-item" data-id="proj-2412">DMU 도서관</div><div class="category">Library</div>
+      <div></div><div class="project project-item" data-id="proj-2411">DMU 옥상 연결공간</div><div class="category">Public</div>
+      <div></div><div class="project project-item" data-id="proj-2410">돌체 파 니엔테</div><div class="category">Aesthetic</div>
+      <div></div><div class="project project-item" data-id="proj-2409">슬로 칠보하우스</div><div class="category">Cafe</div>
+      <div></div><div class="project project-item" data-id="proj-2408">슬로 배곧</div><div class="category">Cafe / Restaurant</div>
+      <div></div><div class="project project-item" data-id="proj-2407">슬로 은계</div><div class="category">Cafe / Restaurant</div>
+      <div></div><div class="project project-item" data-id="proj-2406">메종 드 테라스</div><div class="category">Cafe</div>
+      <div></div><div class="project project-item" data-id="proj-2405">이촌동 주택</div><div class="category">House</div>
+      <div></div><div class="project project-item" data-id="proj-2404">슬로 원베일리</div><div class="category">Cafe</div>
+      <div></div><div class="project project-item" data-id="proj-2403">서울대 치의학과 도서관</div><div class="category">Library</div>
+      <div></div><div class="project project-item" data-id="proj-2402">서울대 첨단융합학부 라운지</div><div class="category">Public</div>
+      <div></div><div class="project project-item" data-id="proj-2401">슬로 장현</div><div class="category">Cafe / Restaurant</div>
     </div>
   </div>
 
-  <!-- 우측: 갤러리 또는 상세 -->
   <div class="right-panel">
-    <!-- 기본 갤러리 -->
     <div id="gallery" class="thumbnail-list">
       <img src="https://via.placeholder.com/300x400?text=2415" alt="테디스로드">
       <img src="https://via.placeholder.com/300x400?text=2414" alt="스파고결">
-      <!-- 추가 썸네일 -->
+      <img src="https://via.placeholder.com/300x400?text=2413" alt="베리오아시">
+      <img src="https://via.placeholder.com/300x400?text=2412" alt="DMU 도서관">
+      <img src="https://via.placeholder.com/300x400?text=2411" alt="DMU 옥상 연결공간">
+      <img src="https://via.placeholder.com/300x400?text=2410" alt="돌체 파 니엔테">
+      <img src="https://via.placeholder.com/300x400?text=2409" alt="슬로 칠보하우스">
+      <img src="https://via.placeholder.com/300x400?text=2408" alt="슬로 배곧">
+      <img src="https://via.placeholder.com/300x400?text=2407" alt="슬로 은계">
+      <img src="https://via.placeholder.com/300x400?text=2406" alt="메종 드 테라스">
+      <img src="https://via.placeholder.com/300x400?text=2405" alt="이촌동 주택">
+      <img src="https://via.placeholder.com/300x400?text=2404" alt="슬로 원베일리">
+      <img src="https://via.placeholder.com/300x400?text=2403" alt="서울대 치의학과 도서관">
+      <img src="https://via.placeholder.com/300x400?text=2402" alt="서울대 첨단융합학부 라운지">
+      <img src="https://via.placeholder.com/300x400?text=2401" alt="슬로 장현">
     </div>
 
-    <!-- 상세 페이지 1 -->
-    <div id="proj-2415" class="project-content">
-      <div class="back-button" onclick="showGallery()">← 갤러리로 돌아가기</div>
-      <h2>테디스로드</h2>
-      <p>이곳은 테디스로드의 상세 설명입니다. 이미지와 텍스트 자유롭게 넣으세요.</p>
-      <img src="https://via.placeholder.com/600x400" alt="">
-    </div>
-
-    <!-- 상세 페이지 2 -->
-    <div id="proj-2414" class="project-content">
-      <div class="back-button" onclick="showGallery()">← 갤러리로 돌아가기</div>
-      <h2>스파고결</h2>
-      <p>이곳은 스파고결 상세 설명입니다. 이미지와 텍스트 자유롭게 넣으세요.</p>
-      <img src="https://via.placeholder.com/600x400" alt="">
-    </div>
+    <!-- 상세 콘텐츠 영역 -->
+    <div id="proj-2415" class="project-content"><div class="back-button" onclick="showGallery()">← 갤러리로 돌아가기</div><h2>테디스로드</h2><p>상세내용 입력</p></div>
+    <div id="proj-2414" class="project-content"><div class="back-button" onclick="showGallery()">← 갤러리로 돌아가기</div><h2>스파고결</h2><p>상세내용 입력</p></div>
+    <div id="proj-2413" class="project-content"><div class="back-button" onclick="showGallery()">← 갤러리로 돌아가기</div><h2>베리오아시</h2><p>상세내용 입력</p></div>
+    <div id="proj-2412" class="project-content"><div class="back-button" onclick="showGallery()">← 갤러리로 돌아가기</div><h2>DMU 도서관</h2><p>상세내용 입력</p></div>
+    <div id="proj-2411" class="project-content"><div class="back-button" onclick="showGallery()">← 갤러리로 돌아가기</div><h2>DMU 옥상 연결공간</h2><p>상세내용 입력</p></div>
+    <div id="proj-2410" class="project-content"><div class="back-button" onclick="showGallery()">← 갤러리로 돌아가기</div><h2>돌체 파 니엔테</h2><p>상세내용 입력</p></div>
+    <div id="proj-2409" class="project-content"><div class="back-button" onclick="showGallery()">← 갤러리로 돌아가기</div><h2>슬로 칠보하우스</h2><p>상세내용 입력</p></div>
+    <div id="proj-2408" class="project-content"><div class="back-button" onclick="showGallery()">← 갤러리로 돌아가기</div><h2>슬로 배곧</h2><p>상세내용 입력</p></div>
+    <div id="proj-2407" class="project-content"><div class="back-button" onclick="showGallery()">← 갤러리로 돌아가기</div><h2>슬로 은계</h2><p>상세내용 입력</p></div>
+    <div id="proj-2406" class="project-content"><div class="back-button" onclick="showGallery()">← 갤러리로 돌아가기</div><h2>메종 드 테라스</h2><p>상세내용 입력</p></div>
+    <div id="proj-2405" class="project-content"><div class="back-button" onclick="showGallery()">← 갤러리로 돌아가기</div><h2>이촌동 주택</h2><p>상세내용 입력</p></div>
+    <div id="proj-2404" class="project-content"><div class="back-button" onclick="showGallery()">← 갤러리로 돌아가기</div><h2>슬로 원베일리</h2><p>상세내용 입력</p></div>
+    <div id="proj-2403" class="project-content"><div class="back-button" onclick="showGallery()">← 갤러리로 돌아가기</div><h2>서울대 치의학과 도서관</h2><p>상세내용 입력</p></div>
+    <div id="proj-2402" class="project-content"><div class="back-button" onclick="showGallery()">← 갤러리로 돌아가기</div><h2>서울대 첨단융합학부 라운지</h2><p>상세내용 입력</p></div>
+    <div id="proj-2401" class="project-content"><div class="back-button" onclick="showGallery()">← 갤러리로 돌아가기</div><h2>슬로 장현</h2><p>상세내용 입력</p></div>
   </div>
 
   <script>
@@ -127,7 +145,6 @@
     projectItems.forEach(item => {
       item.addEventListener('click', () => {
         const id = item.dataset.id;
-        // 모두 숨기고 해당 콘텐츠만 보여줌
         allContents.forEach(c => c.style.display = 'none');
         gallery.style.display = 'none';
         const target = document.getElementById(id);
