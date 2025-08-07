@@ -9,12 +9,17 @@
     body {
       margin: 0;
       font-family: 'Pretendard', sans-serif;
-      display: flex;
       height: 100vh;
       overflow: hidden;
     }
+    .container {
+      display: flex;
+      height: 100vh;
+      max-width: 100vw;
+      overflow: hidden;
+    }
     .left-panel {
-      width: 50vw;
+      width: 50%;
       overflow-y: auto;
       padding: 20px;
       box-sizing: border-box;
@@ -47,25 +52,28 @@
       color: #777;
     }
     .right-panel {
-      width: 50vw;
+      width: 50%;
       height: 100vh;
       overflow-y: auto;
-      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
       padding: 10px;
+      box-sizing: border-box;
     }
     .thumbnail-list {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-height: 100vh;
+      overflow-y: auto;
     }
     .thumbnail-list img {
       width: 100%;
-      aspect-ratio: 3/4;
+      max-width: 400px;
+      aspect-ratio: 3 / 4;
       object-fit: cover;
-      display: block;
-      border: none;
-      box-shadow: none;
-      background: none;
+      margin-bottom: 5px;
     }
     .project-content {
       display: none;
@@ -79,95 +87,27 @@
   </style>
 </head>
 <body>
-<div style="display: flex; height: 100vh; max-width: 100vw; overflow: hidden;">
-  <div class="left-panel" style="width: 50%; overflow-y: auto; border-right: 1px solid #ccc;">
-      <hr class="year-divider">
-      <div class="year">2024</div>
-      <div class="project project-item" data-id="p2401">테디스로드</div><div class="category">Cafe</div>
-      <div></div><div class="project project-item" data-id="p2402">스파고결</div><div class="category">Aesthetic</div>
-      <div></div><div class="project project-item" data-id="p2403">베리오아시</div><div class="category">Cafe</div>
-      <div></div><div class="project project-item" data-id="p2404">DMU 도서관</div><div class="category">Library</div>
-      <div></div><div class="project project-item" data-id="p2405">DMU 옥상 연결공간</div><div class="category">Public</div>
-      <div></div><div class="project project-item" data-id="p2406">돌체 파 니엔테</div><div class="category">Aesthetic</div>
-      <div></div><div class="project project-item" data-id="p2407">슬로 칠보하우스</div><div class="category">Cafe</div>
-      <div></div><div class="project project-item" data-id="p2408">슬로 배곧</div><div class="category">Cafe / Restaurant</div>
-      <div></div><div class="project project-item" data-id="p2409">슬로 은계</div><div class="category">Cafe / Restaurant</div>
-      <div></div><div class="project project-item" data-id="p2410">메종 드 테라스</div><div class="category">Cafe</div>
-      <div></div><div class="project project-item" data-id="p2411">이촌동 주택</div><div class="category">House</div>
-      <div></div><div class="project project-item" data-id="p2412">슬로 원베일리</div><div class="category">Cafe</div>
-      <div></div><div class="project project-item" data-id="p2413">서울대 치의학과 도서관</div><div class="category">Library</div>
-      <div></div><div class="project project-item" data-id="p2414">서울대 첨단융합학부 라운지</div><div class="category">Public</div>
-      <div></div><div class="project project-item" data-id="p2415">슬로 장현</div><div class="category">Cafe / Restaurant</div>
-      <hr class="year-divider">
-      <div class="year">2023</div>
-      <div class="project project-item" data-id="p2301">섬타르 성수</div><div class="category">Cafe</div>
-      <div></div><div class="project project-item" data-id="p2302">하이필스킨</div><div class="category">Aesthetic</div>
-      <div></div><div class="project project-item" data-id="p2303">슬로 진위</div><div class="category">Cafe / Retail / Restaurant</div>
-      <div></div><div class="project project-item" data-id="p2304">슬로 용인</div><div class="category">Cafe / Retail / Restaurant</div>
-      <div></div><div class="project project-item" data-id="p2305">슬로 김포</div><div class="category">Cafe / Restaurant</div>
-      <div></div><div class="project project-item" data-id="p2306">슬로 남영</div><div class="category">Cafe</div>
-      <div></div><div class="project project-item" data-id="p2307">정독도서관</div><div class="category">Library</div>
-      <div></div><div class="project project-item" data-id="p2308">인덕대 도서관</div><div class="category">Library</div>
-      <div></div><div class="project project-item" data-id="p2309">RS Automation</div><div class="category">Office</div>
-      <div></div><div class="project project-item" data-id="p2310">DMU 웰컴센터</div><div class="category">Public</div>
-      <hr class="year-divider">
-      <div class="year">2022</div>
-      <div class="project project-item" data-id="p2201">경성빵공장 남한산성</div><div class="category">Cafe</div>
-      <div></div><div class="project project-item" data-id="p2202">명장시대 미사</div><div class="category">Cafe</div>
-      <div></div><div class="project project-item" data-id="p2203">스파고결 강남구청</div><div class="category">Aesthetic</div>
-      <div></div><div class="project project-item" data-id="p2204">제주 호근동 타운하우스</div><div class="category">House</div>
-      <div></div><div class="project project-item" data-id="p2205">에움 에스테틱</div><div class="category">Aesthetic</div>
-      <div></div><div class="project project-item" data-id="p2206">슬로 수원</div><div class="category">Cafe</div>
-      <div></div><div class="project project-item" data-id="p2207">슬로 광교</div><div class="category">Cafe</div>
-      <hr class="year-divider">
-      <div class="year">2021</div>
-      <div class="project project-item" data-id="p2101">베어풋</div><div class="category">Cafe</div>
-      <div></div><div class="project project-item" data-id="p2102">경성빵공장 올림픽공원</div><div class="category">Cafe</div>
-      <div></div><div class="project project-item" data-id="p2103">이다 베이커리</div><div class="category">Cafe</div>
-      <div></div><div class="project project-item" data-id="p2104">Next On</div><div class="category">Office</div>
-      <div></div><div class="project project-item" data-id="p2105">하늘에 커피</div><div class="category">Cafe</div>
-      <div></div><div class="project project-item" data-id="p2106">Jeongseonsaeng Dermatology</div><div class="category">Aesthetic</div>
-      <div></div><div class="project project-item" data-id="p2107">Coffee 101 Street</div><div class="category">Cafe</div>
-      <div></div><div class="project project-item" data-id="p2108">Coffee 101 Street Office</div><div class="category">Office</div>
-      <div></div><div class="project project-item" data-id="p2109">대영중학교</div><div class="category">Educational</div>
-      <hr class="year-divider">
-      <div class="year">2020</div>
-      <div class="project project-item" data-id="p2001">까치네</div><div class="category">Restaurant</div>
-      <div></div><div class="project project-item" data-id="p2002">경성빵공장</div><div class="category">Cafe</div>
-      <div></div><div class="project project-item" data-id="p2003">동양미래대 PD Lab</div><div class="category">Educational</div>
-      <div></div><div class="project project-item" data-id="p2004">홍콩다방 용인</div><div class="category">Cafe</div>
-      <div></div><div class="project project-item" data-id="p2005">홍콩다방 성수</div><div class="category">Cafe</div>
-      <div></div><div class="project project-item" data-id="p2006">Purum Picnic Cafe</div><div class="category">Cafe</div>
-      <hr class="year-divider">
-      <div class="year">2019</div>
-      <div class="project project-item" data-id="p1901">Flab</div><div class="category">Office</div>
-      <div></div><div class="project project-item" data-id="p1902">섬타르 제주</div><div class="category">Cafe</div>
-      <div></div><div class="project project-item" data-id="p1903">브로더</div><div class="category">Cafe</div>
-      <hr class="year-divider">
-      <div class="year">2018</div>
-      <div class="project project-item" data-id="p1801">Artesanos Lab</div><div class="category">Cafe</div>
-      <div></div><div class="project project-item" data-id="p1802">로이 베이커리</div><div class="category">Cafe</div>
-      <div></div><div class="project project-item" data-id="p1803">달팽이 부엌</div><div class="category">Restaurant</div>
-      <div></div><div class="project project-item" data-id="p1804">DMU 피팅센터</div><div class="category">Public</div>
-      <div></div><div class="project project-item" data-id="p1805">The Value Lounge</div><div class="category">Cafe</div>
+  <div class="container">
+    <div class="left-panel">
+      <!-- 좌측 프로젝트 리스트가 들어갈 자리 -->
+    </div>
+    <div class="right-panel">
+      <div id="gallery" class="thumbnail-list">
+        <img src="https://res.cloudinary.com/dgdj01iwb/image/upload/w_800,q_75/2415_thumbnail_hxgdy8.jpg" alt="테디스로드" data-id="p2401">
+        <img src="https://res.cloudinary.com/dgdj01iwb/image/upload/w_800,q_75/2414_thumbnail_dambd6.jpg" alt="스파고결" data-id="p2402">
+        <img src="https://res.cloudinary.com/dgdj01iwb/image/upload/w_800,q_75/2413_thumbnail_crwoch.jpg" alt="베리오아시" data-id="p2403">
+        <img src="https://res.cloudinary.com/dgdj01iwb/image/upload/w_800,q_75/2412_thumbnail_rrrwee.jpg" alt="DMU 도서관" data-id="p2404">
+        <img src="https://res.cloudinary.com/dgdj01iwb/image/upload/w_800,q_75/2411_thumbnail_d9od8w.jpg" alt="DMU 옥상 연결공간" data-id="p2405">
+        <img src="https://res.cloudinary.com/dgdj01iwb/image/upload/w_800,q_75/2410_thumbnail_zi5f4l.jpg" alt="돌체 파 니엔테" data-id="p2406">
+        <img src="https://picsum.photos/id/1017/600/800" alt="추가 이미지 1" data-id="dummy1">
+        <img src="https://picsum.photos/id/1018/600/800" alt="추가 이미지 2" data-id="dummy2">
+        <img src="https://picsum.photos/id/1019/600/800" alt="추가 이미지 3" data-id="dummy3">
+        <img src="https://picsum.photos/id/1020/600/800" alt="추가 이미지 4" data-id="dummy4">
+        <img src="https://picsum.photos/id/1021/600/800" alt="추가 이미지 5" data-id="dummy5">
+        <img src="https://picsum.photos/id/1022/600/800" alt="추가 이미지 6" data-id="dummy6">
+      </div>
     </div>
   </div>
-
-  <div class="right-panel" style="width: 50%; overflow-y: auto; display: flex; justify-content: center;">
-    <div id="gallery" class="thumbnail-list" style="max-height: 100vh; overflow-y: auto; display: flex; flex-direction: column; align-items: center;">
-        <img src="https://res.cloudinary.com/dgdj01iwb/image/upload/w_800,q_75/2415_thumbnail_hxgdy8.jpg" alt="테디스로드" data-id="p2401">
-        <img src="https://res.cloudinary.com/dgdj01iwb/image/upload/w_800,q_75/2414_thumbnail_dambd6.jpg" alt="스파고결" data-id="p2402">
-        <img src="https://res.cloudinary.com/dgdj01iwb/image/upload/w_800,q_75/2413_thumbnail_crwoch.jpg" alt="베리오아시" data-id="p2403">
-        <img src="https://res.cloudinary.com/dgdj01iwb/image/upload/w_800,q_75/2412_thumbnail_rrrwee.jpg" alt="DMU 도서관" data-id="p2404">
-        <img src="https://res.cloudinary.com/dgdj01iwb/image/upload/w_800,q_75/2411_thumbnail_d9od8w.jpg" alt="DMU 옥상 연결공간" data-id="p2405">
-        <img src="https://res.cloudinary.com/dgdj01iwb/image/upload/w_800,q_75/2410_thumbnail_zi5f4l.jpg" alt="돌체 파 니엔테" data-id="p2406">
-        <img src="https://res.cloudinary.com/dgdj01iwb/image/upload/w_800,q_75/2415_thumbnail_hxgdy8.jpg" alt="테디스로드" data-id="p2401">
-        <img src="https://res.cloudinary.com/dgdj01iwb/image/upload/w_800,q_75/2414_thumbnail_dambd6.jpg" alt="스파고결" data-id="p2402">
-        <img src="https://res.cloudinary.com/dgdj01iwb/image/upload/w_800,q_75/2413_thumbnail_crwoch.jpg" alt="베리오아시" data-id="p2403">
-        <img src="https://res.cloudinary.com/dgdj01iwb/image/upload/w_800,q_75/2412_thumbnail_rrrwee.jpg" alt="DMU 도서관" data-id="p2404">
-        <img src="https://res.cloudinary.com/dgdj01iwb/image/upload/w_800,q_75/2411_thumbnail_d9od8w.jpg" alt="DMU 옥상 연결공간" data-id="p2405">
-        <img src="https://res.cloudinary.com/dgdj01iwb/image/upload/w_800,q_75/2410_thumbnail_zi5f4l.jpg" alt="돌체 파 니엔테" data-id="p2406">
-</div>
 
   <script>
     const projectItems = document.querySelectorAll('.project-item');
@@ -198,7 +138,7 @@
 
     function showGallery() {
       allContents.forEach(c => c.style.display = 'none');
-      gallery.style.display = 'grid';
+      gallery.style.display = 'flex';
     }
   </script>
 </body>
