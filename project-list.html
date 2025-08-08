@@ -138,19 +138,26 @@
     });
 
     document.querySelectorAll('a').forEach(a => {
-    a.addEventListener('click', e => {
-      e.preventDefault();
-      const url = a.href;
-      // 부모창에 메시지 전달
-      window.parent.postMessage({ type: 'openInRightFrame', url }, 'https://factorylab1.github.io');
-    });
-});
+          a.addEventListener('click', e => {
+            e.preventDefault();
+        
+            // 오른쪽 iframe이 부모 창에 있다고 가정
+            if(window.parent && window.parent.frames['rightFrame']) {
+              window.parent.frames['rightFrame'].location.href = e.currentTarget.href;
+            } else {
+              // 혹시 없으면 그냥 새창 열기
+              window.open(e.currentTarget.href, '_blank');
+            }
+          });
+        });    
+
   });
 </script>
 </body>
   
 
 </html>
+
 
 
 
